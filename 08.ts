@@ -5,8 +5,8 @@ let lineCount: number = 4;
 let i :number =0;
 
 
-let x :string =" * ";
-let y : string =" * ";
+let x :string ="*";
+let y : string ="*";
 
 for (i;i<lineCount;i++){
 
