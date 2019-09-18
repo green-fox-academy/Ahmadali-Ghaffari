@@ -16,6 +16,8 @@ let hashmap = {
   3: 'say goodbye '
 };
 
+/*I
+
 for(let i:number = 0;i<notSoCrypticMessage.length;++i){
 
 let temBoxNumber :number = notSoCrypticMessage[i];
@@ -64,7 +66,18 @@ if (temBoxNumber==7){
 
 
   }
-  
+
+}
+
+*/
+
+
+for (let i:number =0 ;i<notSoCrypticMessage.length;++i){
+
+
+
+out=out+hashmap[notSoCrypticMessage[i]];
+
 }
 
 console.log(out);
