@@ -8,4 +8,10 @@ let locationOfString = url.search("bots");
 
 let fixedUrl= url.replace("bots","odds");
 
+
 console.log(fixedUrl);
+
+let fixedUrl2 = fixedUrl.replace("//","://");
+
+console.log(fixedUrl2);
+
