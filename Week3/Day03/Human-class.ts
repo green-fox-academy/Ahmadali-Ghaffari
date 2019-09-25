@@ -64,6 +64,7 @@ console.log(human.iq);
 
 
 if (human.isSmart()) {
+    
  
     console.log(human.name + "  is smart , with iq :" + human.iq);
 
