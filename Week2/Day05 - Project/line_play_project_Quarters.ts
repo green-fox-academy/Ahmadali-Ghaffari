@@ -5,16 +5,21 @@ const canvas = document.querySelector('.main-canvas') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d');
 
 //function greenLines(x1: number[] = [0, 0], y1: number[] = [0, 400]) {
-function greenLines(x1: number[] = [], y1: number[] = []) {
+function greenLines() {
+    let greenInitialX: number = 0;
 
+    let greenEndY: number = 0;
 
-    for (let j = 0; j < 19; ++j) {
+    let greenEndX: number=0;
+    let greenInitialY: number=200;
+
+    for (let j = 0; j < 9; ++j) {
         ctx.strokeStyle = "green";
         ctx.beginPath();
-        x1[1] = x1[1] + 30;
-        ctx.moveTo(x1[1], y1[0]);
-        y1[1] = y1[1] - 20;
-        ctx.lineTo(x1[0], y1[1]);
+        greenInitialX = greenInitialX + 30;
+        ctx.moveTo(greenInitialX, greenInitialY);
+        greenEndY = greenEndY + 20;
+        ctx.lineTo(greenEndX, greenEndY);
         ctx.stroke();
 
 
@@ -23,48 +28,50 @@ function greenLines(x1: number[] = [], y1: number[] = []) {
 }
 
 //function purpleLines(x2: number[] = [600,600], y2: number[]=[400,0]) {
-function purpleLines(x2: number[] = [], y2: number[] = []) {
+function purpleLines() {
+    let purpleInitialX: number=300;
+    let purpleEndY: number=0;
+
+    let purpleEndX: number= 300;
+    let purpleInitialY: number= 200;
 
 
-    for (let i = 0; i < 19; ++i) {
+    for (let i = 0; i < 9; ++i) {
+
         ctx.strokeStyle = "purple";
         ctx.beginPath();
-        y2[1] = y2[1] + 20;
-        ctx.moveTo(x2[0], y2[1]);
-        x2[1] = x2[1] - 30;
-        ctx.lineTo(x2[1] - 30, y2[0]);
+        purpleInitialY = purpleInitialY - 20;
+        ctx.moveTo(purpleInitialX, purpleInitialY);
 
+        purpleEndX = purpleEndX - 30;
+        ctx.lineTo(purpleEndX, purpleEndY);
         ctx.stroke();
 
 
     }
 }
 
-greenLines([0, 0], [0, 400]);
-purpleLines([600, 600], [400, 0]);
 
+greenLines();
+purpleLines();
 
+//------------------------ _ 2 _ QUARTER ---------------------------------\\
 
+function greenLines2() {
+    let greenInitialX: number = 300;
 
-//let xy: number[][] = [[20, 40], [200, 70], [95, 150]]
-//for (let j: number = 0; j < 3; ++j) {
+    let greenEndY: number = 0;
 
-//  horizontalLine(xy[j][0],
-//    xy[j][1]);
-//}
+    let greenEndX: number=300;
+    let greenInitialY: number=200;
 
-//------------------------------------CANVAS 2------------------------------------------------\\
-
-function greenLines2(x1: number[] = [], y1: number[] = []) {
-
-
-    for (let j = 0; j < 19; ++j) {
+    for (let j = 0; j < 9; ++j) {
         ctx.strokeStyle = "green";
         ctx.beginPath();
-        x1[1] = x1[1] + 30;
-        ctx.moveTo(x1[1], y1[0]);
-        y1[1] = y1[1] - 20;
-        ctx.lineTo(x1[0], y1[1]);
+        greenInitialX = greenInitialX + 30;
+        ctx.moveTo(greenInitialX, greenInitialY);
+        greenEndY = greenEndY + 20;
+        ctx.lineTo(greenEndX, greenEndY);
         ctx.stroke();
 
 
@@ -73,25 +80,141 @@ function greenLines2(x1: number[] = [], y1: number[] = []) {
 }
 
 //function purpleLines(x2: number[] = [600,600], y2: number[]=[400,0]) {
-function purpleLines2(x2: number[] = [], y2: number[] = []) {
+function purpleLines2() {
+    let purpleInitialX: number=600;
+    let purpleEndY: number=0;
+
+    let purpleEndX: number= 600;
+    let purpleInitialY: number= 200;
 
 
-    for (let i = 0; i < 19; ++i) {
+    for (let i = 0; i < 9; ++i) {
+
         ctx.strokeStyle = "purple";
         ctx.beginPath();
-        y2[1] = y2[1] + 20;
-        ctx.moveTo(x2[0], y2[1]);
-        x2[1] = x2[1] - 30;
-        ctx.lineTo(x2[1], y2[0]);
+        purpleInitialY = purpleInitialY - 20;
+        ctx.moveTo(purpleInitialX, purpleInitialY);
 
+        purpleEndX = purpleEndX - 30;
+        ctx.lineTo(purpleEndX, purpleEndY);
         ctx.stroke();
 
 
     }
 }
 
-greenLines2([600, 600], [0, 400]);
-purpleLines2([1200, 1200], [400, 0]);
+
+greenLines2();
+purpleLines2();
+
+//--------------------------_ 3 _ QUARTER ---------------------------\\
+
+function greenLines3() {
+    let greenInitialX: number = 0;
+
+    let greenEndY: number = 200;
+
+    let greenEndX: number=0;
+    let greenInitialY: number=400;
+
+    for (let j = 0; j < 9; ++j) {
+        ctx.strokeStyle = "green";
+        ctx.beginPath();
+        greenInitialX = greenInitialX + 30;
+        ctx.moveTo(greenInitialX, greenInitialY);
+        greenEndY = greenEndY + 20;
+        ctx.lineTo(greenEndX, greenEndY);
+        ctx.stroke();
+
+
+    }
+
+}
+
+//function purpleLines(x2: number[] = [600,600], y2: number[]=[400,0]) {
+function purpleLines3() {
+    let purpleInitialX: number=300;
+    let purpleEndY: number=200;
+
+    let purpleEndX: number= 300;
+    let purpleInitialY: number= 400;
+
+
+    for (let i = 0; i < 9; ++i) {
+
+        ctx.strokeStyle = "purple";
+        ctx.beginPath();
+        purpleInitialY = purpleInitialY - 20;
+        ctx.moveTo(purpleInitialX, purpleInitialY);
+
+        purpleEndX = purpleEndX - 30;
+        ctx.lineTo(purpleEndX, purpleEndY);
+        ctx.stroke();
+
+
+    }
+}
+
+
+greenLines3();
+purpleLines3();
+
+//-------------------------- _ 4 _ QUARTER ----------------------------\\
+
+function greenLines4() {
+    let greenInitialX: number = 300;
+
+    let greenEndY: number = 200;
+
+    let greenEndX: number=300;
+    let greenInitialY: number=400;
+
+    for (let j = 0; j < 9; ++j) {
+        ctx.strokeStyle = "green";
+        ctx.beginPath();
+        greenInitialX = greenInitialX + 30;
+        ctx.moveTo(greenInitialX, greenInitialY);
+        greenEndY = greenEndY + 20;
+        ctx.lineTo(greenEndX, greenEndY);
+        ctx.stroke();
+
+
+    }
+
+}
+
+//function purpleLines(x2: number[] = [600,600], y2: number[]=[400,0]) {
+function purpleLines4() {
+    let purpleInitialX: number=600;
+    let purpleEndY: number=200;
+
+    let purpleEndX: number= 600;
+    let purpleInitialY: number= 400;
+
+
+    for (let i = 0; i < 9; ++i) {
+
+        ctx.strokeStyle = "purple";
+        ctx.beginPath();
+        purpleInitialY = purpleInitialY - 20;
+        ctx.moveTo(purpleInitialX, purpleInitialY);
+
+        purpleEndX = purpleEndX - 30;
+        ctx.lineTo(purpleEndX, purpleEndY);
+        ctx.stroke();
+
+
+    }
+}
+
+
+greenLines4();
+purpleLines4();
+
+
+
+
+
 
 
 
