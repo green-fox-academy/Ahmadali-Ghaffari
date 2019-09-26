@@ -22,19 +22,26 @@ let wildPokemon: Pokemon = new Pokemon('Oddish', 'leaf', 'water');
 
 // Which pokemon should Ash use?
 
-console.log('I choose you, ');
+for(let i:number=0;i<5;++i){
+
+
+    if (pokemonOfAsh[i].isEffectiveAgainst(wildPokemon)){
+
+        console.log('I choose you,   ' + pokemonOfAsh[i].name);
+    }
+
+}
 
 
 
-console.log(pokemonOfAsh[2]);
 
 
 function initializePokemon(): Pokemon[] {
     return [
         new Pokemon('Balbasaur', 'leaf', 'water'),
         new Pokemon('Pikatchu', 'electric', 'water'),
-        new Pokemon('Charizard', 'fire', 'leaf'),
+        new Pokemon('Charizard', 'fire', 'leaf'),        
         new Pokemon('Balbasaur', 'water', 'fire'),
-        new Pokemon('Kingler', 'water', 'fire')
+        new Pokemon('Kingler', 'water', 'fire'),
     ];
 }
