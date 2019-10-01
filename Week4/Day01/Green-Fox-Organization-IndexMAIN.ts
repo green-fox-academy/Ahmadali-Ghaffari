@@ -6,11 +6,11 @@ import { Person } from "./Person";
 
 let people = [];
 
-let mark = new Person("Mark", 46, "male");
-people.push(mark);
+//let mark = new Person("Mark", 46, "male");
+//people.push(mark);
 
-let jane = new Person();
-people.push(jane);
+//let jane = new Person();
+//people.push(jane);
 
 let john = new Student("John Doe", 20, "male", "BME");
 people.push(john);

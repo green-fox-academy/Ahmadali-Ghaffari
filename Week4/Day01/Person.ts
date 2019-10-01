@@ -1,5 +1,5 @@
 
-export class Person {
+export abstract class Person {
 
     protected _name: string = "";
     protected _age: number;
@@ -22,9 +22,7 @@ export class Person {
 
     }
 
-    protected specificIntroduction(): string {
-        return " ";
-    }
+    protected abstract specificIntroduction(): string
 
     protected specificGetGoal() {
 
@@ -40,11 +38,8 @@ export class Person {
 
 }
 
-let person = new Person();
 
 
-person.introduce();
-person.getGoal();
 
 
 //console.log(person2.introduce());

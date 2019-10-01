@@ -29,7 +29,7 @@ export class Cohort {
 
     public info() {
 
-        console.log(" The " + this._name + " cohort has " + this._students.push() + " students and " + this._mentors.push() + " mentors. ");
+        console.log(" The " + this._name + " cohort has " + this._students.length + " students and " + this._mentors.length + " mentors. ");
 
     }
 
