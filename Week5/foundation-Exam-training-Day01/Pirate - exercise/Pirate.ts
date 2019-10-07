@@ -15,7 +15,7 @@ class Pirate {
 
         } else {
 
-            console.log("The pirate is Dead !!!!!");
+            console.log("he's dead.");
 
         }
     }
@@ -35,7 +35,7 @@ class Pirate {
 
         } else{
 
-            console.log("The Pirate is DEAD !!!!!")
+            console.log("he's dead.")
         }
     }
 
@@ -49,7 +49,7 @@ class Pirate {
 
 let pirate = new Pirate;
 
-//pirate.die();
+pirate.die();
 
-//pirate.drinkSomeRum();
+pirate.drinkSomeRum();
 pirate.howsItGoingMate();
