@@ -42,13 +42,11 @@ export class Monkey extends Animal {
 
 export class Elephant extends Animal {
     isHungry(): boolean {
+        this._checkOn += 1;
         if (this._checkOn % 2 == 0) {
-            this._checkOn += 1;
             return true;
-        } else {
-            this._checkOn += 1;
-            return false;
         }
+        return false;
     }
 }
 
